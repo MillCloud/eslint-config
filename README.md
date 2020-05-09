@@ -83,6 +83,7 @@ module.exports = {
 ## More Config
 
 - [@modyqyw/eslint-config-vue](https://github.com/Millcloud/eslint-config-vue)
+- [@modyqyw/eslint-config-vue-ts](https://github.com/Millcloud/eslint-config-vue-ts)
 - [@modyqyw/eslint-config-react](https://github.com/Millcloud/eslint-config-react)
 
 ## License
