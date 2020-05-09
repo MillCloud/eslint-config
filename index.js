@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  parser: "babel-eslint",
   extends: ["eslint:recommended", "standard"],
   env: {
     browser: true,
@@ -47,15 +48,50 @@ module.exports = {
     ],
   },
   overrides: [
-    // for unit tests files
+    // for typescript
     {
-      files: [
-        "**/__tests__/*.{j,t}s?(x)",
-        "**/tests/unit/**/*.spec.{j,t}s?(x)",
+      files: ["**/*.ts"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        warnOnUnsupportedTypeScriptVersion: true,
+      },
+      plugins: ["@typescript-eslint"],
+      extends: [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
       ],
-      env: {
-        jest: true,
-        mocha: true,
+      rules: {
+        // for projects developing
+        "@typescript-eslint/explicit-function-return-type": "off",
+        // for projects developing
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars":
+          process.env.NODE_ENV === "production" ||
+          process.env.NODE_ENV === "pre-production" ||
+          process.env.NODE_ENV === "staging"
+            ? "warn"
+            : "off",
+        // override eslint-config-standard and follow prettier default options
+        quotes: "off",
+        "@typescript-eslint/quotes": [
+          "error",
+          "double",
+          { allowTemplateLiterals: false },
+        ],
+        // override eslint-config-standard and follow prettier default options
+        semi: "off",
+        "@typescript-eslint/semi": ["error", "always"],
+        // override eslint-config-standard and follow prettier default options
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": [
+          "error",
+          {
+            anonymous: "always",
+            named: "never",
+            asyncArrow: "always",
+          },
+        ],
       },
     },
   ],
