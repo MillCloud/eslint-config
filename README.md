@@ -2,18 +2,20 @@
 
 An ESLint shareable config.
 
+Extends [eslint-config-standard](https://github.com/standard/eslint-config-standard) and override some rules to match prettier.
+
 ## Usage
 
 - Install the config.
 
 ```sh
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.0.0 -D
+npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.1.0 -D
 ```
 
 For yarn, run scripts below.
 
 ```sh
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.0.0 -D
+yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.1.0 -D
 ```
 
 - Set up.
@@ -26,12 +28,13 @@ module.exports = {
 
 ```
 
-- For VSCode
-  - Install plugins.
-    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-    - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-    - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
-  - Set up `Settings.json`. Then `F1` => `Format Document`(call vetur for `*.vue` files and prettier for other files) => Save File(call ESLint).
+## VSCode
+
+- Install plugins.
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+- Set up `Settings.json`. Then `F1` => `Format Document`(call vetur for `*.vue` files and prettier for other files) => Save File(call ESLint).
 
 ```json
 {
@@ -78,16 +81,13 @@ module.exports = {
 }
 ```
 
-- For WebStorm
-  - TODO
-
 ## More Config
 
+- [@modyqyw/eslint-config-ts](https://github.com/Millcloud/eslint-config-ts)
 - [@modyqyw/eslint-config-vue](https://github.com/Millcloud/eslint-config-vue)
 - [@modyqyw/eslint-config-vue-ts](https://github.com/Millcloud/eslint-config-vue-ts)
 - [@modyqyw/eslint-config-react](https://github.com/Millcloud/eslint-config-react)
 - [@modyqyw/eslint-config-react-ts](https://github.com/Millcloud/eslint-config-react-ts)
-- [@modyqyw/eslint-config-ts](https://github.com/Millcloud/eslint-config-ts)
 
 ## License
 
