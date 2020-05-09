@@ -7,15 +7,19 @@ An ESLint shareable config for javascript and typescript.
 - Install the config.
 
 ```sh
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 -D # for javascript
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 typescript@~3.8.0 -D # for typescript
+# for javascript
+npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 -D
+# for typescript
+npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 typescript@~3.8.0 -D
 ```
 
 For yarn, run scripts below.
 
 ```sh
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 -D # for javascript
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 typescript@~3.8.0 -D # for typescript
+# for javascript
+yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 -D
+# for typescript
+yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 typescript@~3.8.0 -D
 ```
 
 - Set up.
