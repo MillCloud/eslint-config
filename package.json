@@ -5,7 +5,9 @@
   "main": "index.js",
   "keywords": [
     "eslint",
-    "config"
+    "config",
+    "javascript",
+    "typescript"
   ],
   "author": "ModyQyW <wurui7@mail3.sysu.edu.cn>",
   "license": "MIT",
