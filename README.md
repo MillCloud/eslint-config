@@ -23,9 +23,8 @@ yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.1.0 -D
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: ['@modyqyw']
-}
-
+  extends: ["@modyqyw"],
+};
 ```
 
 ## VSCode
