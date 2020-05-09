@@ -1,21 +1,21 @@
 # @modyqyw/eslint-config
 
-An ESLint shareable config.
-
-Extends [eslint-config-standard](https://github.com/standard/eslint-config-standard) and override some rules to match prettier.
+An ESLint shareable config for javascript and typescript.
 
 ## Usage
 
 - Install the config.
 
 ```sh
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.1.0 -D
+npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 -D # for javascript
+npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 typescript@~3.8.0 -D # for typescript
 ```
 
 For yarn, run scripts below.
 
 ```sh
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.1.0 -D
+yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 -D # for javascript
+yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.2.0 typescript@~3.8.0 -D # for typescript
 ```
 
 - Set up.
@@ -82,11 +82,8 @@ module.exports = {
 
 ## More Config
 
-- [@modyqyw/eslint-config-ts](https://github.com/Millcloud/eslint-config-ts)
 - [@modyqyw/eslint-config-vue](https://github.com/Millcloud/eslint-config-vue)
-- [@modyqyw/eslint-config-vue-ts](https://github.com/Millcloud/eslint-config-vue-ts)
 - [@modyqyw/eslint-config-react](https://github.com/Millcloud/eslint-config-react)
-- [@modyqyw/eslint-config-react-ts](https://github.com/Millcloud/eslint-config-react-ts)
 
 ## License
 
