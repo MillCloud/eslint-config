@@ -2,28 +2,22 @@
   "name": "@modyqyw/eslint-config",
   "version": "1.2.6",
   "description": "An ESLint shareable config for javascript and typescript.",
-  "main": "index.js",
   "keywords": [
     "eslint",
     "config",
     "javascript",
     "typescript"
   ],
-  "author": "ModyQyW <wurui7@mail3.sysu.edu.cn>",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Millcloud/eslint-config.git"
-  },
+  "homepage": "https://github.com/Millcloud/eslint-config#readme",
   "bugs": {
     "url": "https://github.com/Millcloud/eslint-config/issues"
   },
-  "homepage": "https://github.com/Millcloud/eslint-config#readme",
-  "peerDependencies": {
-    "eslint": "~6.8.0"
+  "license": "MIT",
+  "author": "ModyQyW <wurui7@mail3.sysu.edu.cn>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Millcloud/eslint-config.git"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.31.0",
@@ -37,8 +31,14 @@
     "eslint-plugin-standard": "^4.0.1",
     "typescript": "^3.8.3"
   },
+  "peerDependencies": {
+    "eslint": "~6.8.0"
+  },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
