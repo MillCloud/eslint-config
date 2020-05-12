@@ -36,7 +36,11 @@ module.exports = {
         ? "warn"
         : "off",
     // override eslint-config-standard and follow prettier default options
-    quotes: ["error", "double", { allowTemplateLiterals: false }],
+    quotes: [
+      "error",
+      "double",
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
     // override eslint-config-standard and follow prettier default options
     semi: ["error", "always"],
     // override eslint-config-standard and follow prettier default options
@@ -79,7 +83,7 @@ module.exports = {
         "@typescript-eslint/quotes": [
           "error",
           "double",
-          { allowTemplateLiterals: false },
+          { avoidEscape: true, allowTemplateLiterals: false },
         ],
         // override eslint-config-standard and follow prettier default options
         semi: "off",
