@@ -33,7 +33,6 @@ module.exports = {
         : "off",
   },
   overrides: [
-    // for typescript
     {
       files: ["**/*.ts"],
       parser: "@typescript-eslint/parser",
