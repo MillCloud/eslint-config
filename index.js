@@ -44,10 +44,6 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "airbnb-typescript/base",
       ],
-      rules: {
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "no-unused-vars": "off",
-      },
     },
   ],
 };
