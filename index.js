@@ -44,6 +44,26 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "airbnb-typescript/base",
       ],
+      rules: {
+        "@typescript-eslint/no-console":
+          process.env.NODE_ENV === "production" ||
+          process.env.NODE_ENV === "pre-production" ||
+          process.env.NODE_ENV === "staging"
+            ? "warn"
+            : "off",
+        "@typescript-eslint/no-debugger":
+          process.env.NODE_ENV === "production" ||
+          process.env.NODE_ENV === "pre-production" ||
+          process.env.NODE_ENV === "staging"
+            ? "warn"
+            : "off",
+        "@typescript-eslint/no-unused-vars":
+          process.env.NODE_ENV === "production" ||
+          process.env.NODE_ENV === "pre-production" ||
+          process.env.NODE_ENV === "staging"
+            ? "warn"
+            : "off",
+      },
     },
   ],
 };
