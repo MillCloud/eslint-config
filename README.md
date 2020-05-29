@@ -10,7 +10,7 @@ An ESLint shareable config for javascript and typescript.
 # for javascript
 npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 -D
 # for typescript
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 typescript@~3.9.0 -D
+npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~2.34.0 @typescript-eslint/parser@~2.34.0 -D
 ```
 
 For yarn, run scripts below.
@@ -19,7 +19,7 @@ For yarn, run scripts below.
 # for javascript
 yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 -D
 # for typescript
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 typescript@~3.9.0 -D
+yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~2.34.0 @typescript-eslint/parser@~2.34.0 -D
 ```
 
 - Set up.
@@ -64,19 +64,15 @@ module.exports = {
     "*.js": "javascriptreact",
     "*.ts": "typescriptreact",
     "*.wxml": "html",
-    "*.wxs": "javascript",
+    "*.wxs": "javascriptreact",
     "*.wxss": "css",
     "*.axml": "html",
-    "*.sjs": "javascript",
+    "*.sjs": "javascriptreact",
     "*.acss": "css",
     "*.wpy": "html",
     "*.json": "jsonc",
-    "*.nvue": "vue"
-  },
-  "vetur.format.defaultFormatterOptions": {
-    "prettyhtml": {
-      "wrapAttributes": true
-    }
+    "*.nvue": "vue",
+    "*.ux": "vue"
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
