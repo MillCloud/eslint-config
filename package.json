@@ -1,12 +1,14 @@
 {
   "name": "@modyqyw/eslint-config",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "An ESLint shareable config for javascript and typescript.",
   "keywords": [
     "eslint",
     "config",
     "javascript",
-    "typescript"
+    "typescript",
+    "js",
+    "ts"
   ],
   "homepage": "https://github.com/Millcloud/eslint-config#readme",
   "bugs": {
