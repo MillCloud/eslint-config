@@ -20,19 +20,21 @@
     "url": "git@github.com:Millcloud/eslint-config.git"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~3.0.0",
-    "@typescript-eslint/parser": "~3.0.0",
+    "@typescript-eslint/eslint-plugin": "~2.34.0",
+    "@typescript-eslint/parser": "~2.34.0",
     "babel-eslint": "~10.1.0",
     "eslint": "~6.8.0",
     "eslint-config-airbnb-base": "~14.1.0",
     "eslint-config-airbnb-typescript": "~7.2.0",
     "eslint-plugin-import": "~2.20.0",
-    "typescript": "~3.9.0"
+    "typescript": "~3.9.3"
   },
   "devDependencies": {
     "prettier": "~2.0.0"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "~2.34.0",
+    "@typescript-eslint/parser": "~2.34.0",
     "eslint": "~6.8.0"
   },
   "engines": {
