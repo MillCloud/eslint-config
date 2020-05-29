@@ -22,6 +22,8 @@ yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 -D
 yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.4.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~2.34.0 @typescript-eslint/parser@~2.34.0 -D
 ```
 
+- Add `tsconfig.json` into the project root if you use typescript.
+
 - Set up.
 
 ```js
