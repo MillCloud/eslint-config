@@ -37,6 +37,7 @@ module.exports = {
       files: ["**/*.ts"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
+        project: "./tsconfig.json",
         warnOnUnsupportedTypeScriptVersion: true,
       },
       plugins: ["@typescript-eslint"],
