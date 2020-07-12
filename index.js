@@ -41,7 +41,10 @@ module.exports = {
         warnOnUnsupportedTypeScriptVersion: true,
       },
       plugins: ['@typescript-eslint'],
-      extends: ['plugin:@typescript-eslint/recommended', 'airbnb-typescript/base'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'airbnb-typescript/base',
+      ],
       rules: {
         '@typescript-eslint/no-console':
           process.env.NODE_ENV === 'production' ||
