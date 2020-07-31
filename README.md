@@ -8,18 +8,18 @@ An ESLint shareable config for javascript and typescript.
 
 ```sh
 # for javascript
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.5.0 -D
+npm i eslint@~7.5.0 @modyqyw/eslint-config@~1.6.0 -D
 # for typescript
-npm i eslint@~6.8.0 @modyqyw/eslint-config@~1.5.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~3.2.0 @typescript-eslint/parser@~3.2.0 -D
+npm i eslint@~7.5.0 @modyqyw/eslint-config@~1.6.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~3.7.0 @typescript-eslint/parser@~3.7.0 -D
 ```
 
 For yarn, run scripts below.
 
 ```sh
 # for javascript
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.5.0 -D
+yarn add eslint@~7.5.0 @modyqyw/eslint-config@~1.6.0 -D
 # for typescript
-yarn add eslint@~6.8.0 @modyqyw/eslint-config@~1.5.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~3.2.0 @typescript-eslint/parser@~3.2.0 -D
+yarn add eslint@~7.5.0 @modyqyw/eslint-config@~1.6.0 typescript@~3.9.0 @typescript-eslint/eslint-plugin@~3.7.0 @typescript-eslint/parser@~3.7.0 -D
 ```
 
 - Add `tsconfig.json` into the project root if you use typescript.
@@ -50,7 +50,8 @@ module.exports = {
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
-    "json": "jsonc"
+    "json": "jsonc",
+    "vue-html": "html"
   },
   "eslint.validate": [
     "javascript",
@@ -71,7 +72,12 @@ module.exports = {
     "*.axml": "html",
     "*.sjs": "javascriptreact",
     "*.acss": "css",
-    "*.wpy": "html",
+    "*.swan": "html",
+    "*.ttml": "html",
+    "*.ttss": "css",
+    "*.jxml": "html",
+    "*.jxss": "css",
+    "*.wpy": "vue",
     "*.json": "jsonc",
     "*.nvue": "vue",
     "*.ux": "vue"
