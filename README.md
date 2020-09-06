@@ -10,7 +10,7 @@ An ESLint shareable config for javascript and typescript.
 # for javascript
 npm i eslint@~7.8.0 @modyqyw/eslint-config@~1.8.0 -D
 # for typescript
-npm i eslint@~7.8.0 @modyqyw/eslint-config@~1.8.0 typescript@~4.0.0 @typescript-eslint/eslint-plugin@~4.0.0 @typescript-eslint/parser@~4.0.0 -D
+npm i eslint@~7.8.0 @modyqyw/eslint-config@~1.8.0 typescript@~4.0.0 -D
 ```
 
 For yarn, run scripts below.
@@ -19,7 +19,7 @@ For yarn, run scripts below.
 # for javascript
 yarn add eslint@~7.8.0 @modyqyw/eslint-config@~1.8.0 -D
 # for typescript
-yarn add eslint@~7.8.0 @modyqyw/eslint-config@~1.8.0 typescript@~4.0.0 @typescript-eslint/eslint-plugin@~4.0.0 @typescript-eslint/parser@~4.0.0 -D
+yarn add eslint@~7.8.0 @modyqyw/eslint-config@~1.8.0 typescript@~4.0.0 -D
 ```
 
 - Add `tsconfig.json` into the project root if you use typescript.
