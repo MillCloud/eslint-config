@@ -1,6 +1,6 @@
 {
   "name": "@modyqyw/eslint-config",
-  "version": "1.8.5",
+  "version": "1.8.6",
   "description": "An ESLint shareable config for javascript and typescript.",
   "keywords": [
     "eslint",
