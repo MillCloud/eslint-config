@@ -1,6 +1,6 @@
 # @modyqyw/eslint-config
 
-An ESLint shareable config.
+An ESLint shareable config for JavaScript/TypeScript/React/ReactNative/Taro/Vue2/Vue3/UniApp projects.
 
 ## Usage
 
@@ -66,22 +66,14 @@ module.exports = {
 
 ### Vue2 / UniApp + JavaScript
 
-With npm
-
 ```sh
 npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
 ```
 
-With yarn
-
-```sh
-yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
-```
-
-Set up `.eslintrc.js` in the root directory of your project.
-
-```javascript
-// .eslintrc.js
+```js
+// {PROJECT_DIR}/.eslintrc.js
 module.exports = {
   extends: ["@modyqyw/eslint-config/vue2"],
 };
@@ -104,22 +96,14 @@ module.exports = {
 
 ### Vue3 + JavaScript
 
-With npm
-
 ```sh
 npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
 ```
 
-With yarn
-
-```sh
-yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
-```
-
-Set up `.eslintrc.js` in the root directory of your project.
-
-```javascript
-// .eslintrc.js
+```js
+// {PROJECT_DIR}/.eslintrc.js
 module.exports = {
   extends: ["@modyqyw/eslint-config/vue3"],
 };
@@ -144,18 +128,12 @@ module.exports = {
 
 - Install plugins.
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 - Set up `Settings.json`. Then `F1 => Format Document` => `F1 => File: Save`.
 
 ```json
 {
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "emmet.includeLanguages": {
-    "vue-html": "html"
   },
   "eslint.validate": [
     "javascript",
@@ -180,9 +158,6 @@ module.exports = {
     "*.wpy": "vue",
     "*.nvue": "vue",
     "*.ux": "vue"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
   }
 }
 ```
