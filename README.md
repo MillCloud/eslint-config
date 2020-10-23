@@ -1,39 +1,146 @@
 # @modyqyw/eslint-config
 
-An ESLint shareable config for javascript and typescript.
+An ESLint shareable config.
 
 ## Usage
 
-- Install the config.
+### JavaScript
 
 ```sh
-# for javascript
-npm i eslint@~7.10.0 @modyqyw/eslint-config@~1.8.0 -D
-# for typescript
-npm i eslint@~7.10.0 @modyqyw/eslint-config@~1.8.0 typescript@~4.0.0 -D
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
 ```
-
-For yarn, run scripts below.
-
-```sh
-# for javascript
-yarn add eslint@~7.10.0 @modyqyw/eslint-config@~1.8.0 -D
-# for typescript
-yarn add eslint@~7.10.0 @modyqyw/eslint-config@~1.8.0 typescript@~4.0.0 -D
-```
-
-- Add `tsconfig.json` into the project root if you use typescript. Check [Intro to the TSConfig Reference](https://www.typescriptlang.org/tsconfig).
-
-- Set up.
 
 ```js
-// .eslintrc.js
+// {PROJECT_DIR}/.eslintrc.js
 module.exports = {
   extends: ["@modyqyw"],
 };
 ```
 
-## VSCode
+### TypeScript
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+```
+
+```js
+// {PROJECT_DIR}/.eslintrc.js
+module.exports = {
+  extends: ["@modyqyw"],
+};
+```
+
+### React / Taro3 + JavaScript
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+```
+
+```js
+// {PROJECT_DIR}/.eslintrc.js
+module.exports = {
+  extends: ["@modyqyw/eslint-config/react"],
+};
+```
+
+### React / Taro3 + TypeScript
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+```
+
+```js
+// {PROJECT_DIR}/.eslintrc.js
+module.exports = {
+  extends: ["@modyqyw/eslint-config/react"],
+};
+```
+
+### Vue2 / UniApp + JavaScript
+
+With npm
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+```
+
+With yarn
+
+```sh
+yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+```
+
+Set up `.eslintrc.js` in the root directory of your project.
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ["@modyqyw/eslint-config/vue2"],
+};
+```
+
+### Vue2 / UniApp + TypeScript
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+```
+
+```js
+// {PROJECT_DIR}/.eslintrc.js
+module.exports = {
+  extends: ["@modyqyw/eslint-config/vue2-typescript"],
+};
+```
+
+### Vue3 + JavaScript
+
+With npm
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+```
+
+With yarn
+
+```sh
+yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
+```
+
+Set up `.eslintrc.js` in the root directory of your project.
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ["@modyqyw/eslint-config/vue3"],
+};
+```
+
+### Vue3 + TypeScript
+
+```sh
+npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+# or
+# yarn add -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
+```
+
+```js
+// {PROJECT_DIR}/.eslintrc.js
+module.exports = {
+  extends: ["@modyqyw/eslint-config/vue3-typescript"],
+};
+```
+
+### VSCode
 
 - Install plugins.
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -44,13 +151,10 @@ module.exports = {
 ```json
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "json": "jsonc",
     "vue-html": "html"
   },
   "eslint.validate": [
@@ -58,19 +162,15 @@ module.exports = {
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "html",
-    "vue",
-    "vue-html"
+    "vue"
   ],
   "files.eol": "\n",
   "files.associations": {
-    "*.js": "javascriptreact",
-    "*.ts": "typescriptreact",
     "*.wxml": "html",
-    "*.wxs": "javascriptreact",
+    "*.wxs": "javascript",
     "*.wxss": "css",
     "*.axml": "html",
-    "*.sjs": "javascriptreact",
+    "*.sjs": "javascript",
     "*.acss": "css",
     "*.swan": "html",
     "*.ttml": "html",
@@ -78,7 +178,6 @@ module.exports = {
     "*.jxml": "html",
     "*.jxss": "css",
     "*.wpy": "vue",
-    "*.json": "jsonc",
     "*.nvue": "vue",
     "*.ux": "vue"
   },
@@ -88,11 +187,11 @@ module.exports = {
 }
 ```
 
-## More Config
+## More Configs
 
-- [@modyqyw/eslint-config-vue](https://github.com/MillCloud/eslint-config-vue)
-- [@modyqyw/eslint-config-vue-ts](https://github.com/MillCloud/eslint-config-vue-ts)
-- [@modyqyw/eslint-config-react](https://github.com/MillCloud/eslint-config-react)
+- [@modyqyw/prettier-config](https://github.com/MillCloud/prettier-config#readme)
+- [@modyqyw/eslint-config](https://github.com/MillCloud/eslint-config#readme)
+- [@modyqyw/stylelint-config](https://github.com/MillCloud/stylelint-config#readme)
 
 ## License
 

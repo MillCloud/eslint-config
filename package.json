@@ -1,43 +1,78 @@
 {
   "name": "@modyqyw/eslint-config",
   "version": "1.8.9",
-  "description": "An ESLint shareable config for javascript and typescript.",
+  "description": "An ESLint shareable config for JavaScript/TypeScript/React/Taro/Vue2/Vue3/UniApp projects.",
   "keywords": [
     "eslint",
     "config",
     "javascript",
     "typescript",
     "js",
-    "ts"
+    "ts",
+    "react",
+    "taro",
+    "vue",
+    "vue2",
+    "vue3",
+    "uniapp",
+    "uni-app"
   ],
   "homepage": "https://github.com/MillCloud/eslint-config#readme",
   "bugs": {
     "url": "https://github.com/MillCloud/eslint-config/issues"
   },
   "license": "MIT",
-  "author": "ModyQyW <wurui7@mail3.sysu.edu.cn>",
+  "author": {
+    "name": "ModyQyW",
+    "email": "wurui7@mail3.sysu.edu.cn",
+    "url": "https://modyqyw.github.io"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:MillCloud/eslint-config.git"
   },
+  "scripts": {
+    "check": "ncu",
+    "commit": "git-cz && git push",
+    "lint": "eslint . --ext .js --fix",
+    "release": "np --no-tests --no-release-draft"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~4.4.0",
-    "@typescript-eslint/parser": "~4.4.0",
+    "@typescript-eslint/eslint-plugin": "~4.5.0",
+    "@typescript-eslint/parser": "~4.5.0",
     "babel-eslint": "~10.1.0",
+    "eslint-config-airbnb": "~18.2.0",
     "eslint-config-airbnb-base": "~14.2.0",
     "eslint-config-airbnb-typescript": "~12.0.0",
+    "eslint-import-resolver-node": "~0.3.0",
+    "eslint-import-resolver-webpack": "~0.13.0",
     "eslint-plugin-import": "~2.22.0",
-    "typescript": "~4.0.0"
+    "eslint-plugin-jsx-a11y": "~6.3.0",
+    "eslint-plugin-react": "~7.21.0",
+    "eslint-plugin-react-hooks": "~4.2.0",
+    "eslint-plugin-vue": "~7.1.0",
+    "typescript": "~4.0.0",
+    "vue-class-component": "~7.2.0",
+    "vue-eslint-parser": "~7.1.0",
+    "vue-property-decorator": "~9.0.0"
   },
   "devDependencies": {
     "@modyqyw/prettier-config": "~1.1.0",
+    "commitizen": "~4.2.0",
     "eslint": "~7.11.0",
+    "eslint-config-prettier": "~6.14.0",
+    "eslint-plugin-prettier": "~3.1.0",
+    "husky": "~4.3.0",
+    "lint-staged": "~10.4.0",
+    "np": "~6.5.0",
+    "npm-check-updates": "~9.1.2",
     "prettier": "~2.1.0"
-  },
-  "peerDependencies": {
-    "eslint": "~6.8.0 || ~7.11.0",
-    "typescript": "~4.0.0"
   },
   "engines": {
     "node": ">=10",
@@ -45,5 +80,16 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
   }
 }

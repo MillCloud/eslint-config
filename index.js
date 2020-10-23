@@ -1,12 +1,10 @@
 module.exports = {
   root: true,
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
-  extends: ['eslint:recommended', 'airbnb-base'],
+  parser: 'babel-eslint',
+  extends: ['airbnb-base'],
   env: {
     browser: true,
-    es2020: true,
+    es2021: true,
     jest: true,
     jquery: true,
     mocha: true,
@@ -40,11 +38,7 @@ module.exports = {
         project: './tsconfig.json',
         warnOnUnsupportedTypeScriptVersion: true,
       },
-      plugins: ['@typescript-eslint'],
-      extends: [
-        'plugin:@typescript-eslint/recommended',
-        'airbnb-typescript/base',
-      ],
+      extends: ['airbnb-typescript/base'],
       rules: {
         '@typescript-eslint/no-console':
           process.env.NODE_ENV === 'production' ||
