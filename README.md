@@ -34,7 +34,7 @@ module.exports = {
 };
 ```
 
-### React / Taro3 + JavaScript
+### React / ReactNative / Taro3 + JavaScript
 
 ```sh
 npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0
@@ -49,7 +49,7 @@ module.exports = {
 };
 ```
 
-### React / Taro3 + TypeScript
+### React / ReactNative / Taro3 + TypeScript
 
 ```sh
 npm i -D babel-eslint@~10.1.0 eslint@~7.11.0 @modyqyw/eslint-config@~1.9.0 @typescript-eslint/parser@~4.5.0 @typescript-eslint/eslint-plugin@~4.5.0 typescript@~4.0.0
