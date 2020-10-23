@@ -1,6 +1,6 @@
 {
   "name": "@modyqyw/eslint-config",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "An ESLint shareable config for JavaScript/TypeScript/React/ReactNative/Taro/Vue2/Vue3/UniApp projects.",
   "keywords": [
     "eslint",
